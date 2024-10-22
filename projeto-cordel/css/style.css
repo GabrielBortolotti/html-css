@@ -1,50 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+*{
+    margin:0px
+}
 
 body{
     margin: 0px;
+    padding: 0px;
 }
 
 header{
-    margin: 0px;
-    padding: 15px;
-
+    padding: 40px;
     background-color: black;
     color: white;
-    
     text-align: center;
 }
 
 h1{
     font-family: "Passion One", sans-serif;
+    font-size: 10vw;
+    font-variant: small-caps;
+    margin: 0;
 }
 
 h4{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
+    font-size: 16px;
+}
+
+a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    font-size: 3.5vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
 }
 
 p{
     font-family: "Sriracha", sans-serif;
-    padding: 5px;
-}
-
-section{
-    box-sizing: content-box;
-    padding: 15px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    border: 2px solid red;
+    padding: 10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.452);
 }
 
 p.destaque{
-    background-color: rgba(146, 146, 146, 0.466);
+    background-color: rgba(0, 0, 0, 0.411);
     display: inline-block;
-
+    color: white;
 }
 
 section.destaque{
     background-size: cover;
     background-attachment: fixed;
+    box-shadow: inset 1px 1px 10px 0px black;
     
 }
 
@@ -59,6 +75,7 @@ section.destaque{
 }
 
 footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: black;
     color: white;
     text-align: center;
