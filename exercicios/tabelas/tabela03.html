@@ -14,8 +14,7 @@
             text-align: left;
             vertical-align: middle;
             border-collapse: collapse;
-            width: 600px;
-            height: 300px;
+            width: 1000px;
         }
         th{
             text-align: center;
@@ -29,73 +28,89 @@
             color: white;
             font-weight: bold;
         }
+        .cmedi{
+            background-color: rgb(184, 184, 184);
+        }
+
+        div#container{
+            overflow-x: auto;
+        }
+        
     </style>
 </head>
 <body>
     <h1>Tabela de Médias</h1>
     
-    <table>
-        <thead class="destaque">
-            <tr>
-                <th rowspan="2" scope="col">Area</th>
-                <th rowspan="2" scope="col">Disciplinas</th>
-                <th colspan="2" scope="colgroup">Notas</th>
-                <th rowspan="2" scope="col">Média</th>
-            </tr>
-            <tr>
-                <th scope="col">Nota 1</th>
-                <th scope="col">Nota 2</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th rowspan="4" scope="rowgroup">Exatas</th>
-                <td>Matematica</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Fisica</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Quimica</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Biologia</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="destaque">
-                <td colspan="4">Média de Exatas</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <th rowspan="2" scope="rowgroup">Humanas</th>
-                <td>Historia</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr>
-                <td>Geografia</td>
-                <td>0</td>
-                <td>0</td>
-                <td>0</td>
-            </tr>
-            <tr class="destaque">
-                <td colspan="4">Média de Humanas</td>
-                <td>0</td>
-            </tr>
-        </tbody>
-    </table>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="carea">
+                <col class="cdisc">
+                <col class="cnot1" span="2">
+                <col class="cmedi">
+            </colgroup>
+            <thead class="destaque">
+                <tr>
+                    <th rowspan="2" scope="col">Area</th>
+                    <th rowspan="2" scope="col">Disciplinas</th>
+                    <th colspan="2" scope="colgroup">Notas</th>
+                    <th rowspan="2" scope="col">Média</th>
+                </tr>
+                <tr>
+                    <th scope="col">Nota 1</th>
+                    <th scope="col">Nota 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="4" scope="rowgroup">Exatas</th>
+                    <td>Matematica</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Fisica</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Quimica</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr class="destaque">
+                    <td colspan="4">Média de Exatas</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" scope="rowgroup">Humanas</th>
+                    <td>Historia</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr class="destaque">
+                    <td colspan="4">Média de Humanas</td>
+                    <td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
 </body>
 </html>
