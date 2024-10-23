@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 400px;
+            position: relative;
+        }
+        td, th{
+            border: 2px solid black;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: white;
+            border: 2px solid black;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: rgb(212, 212, 212);
+        }
+    </style>
+</head>
+<body>
+    <form action="submit" method="post"></form>
+    <table>
+        <thead>
+            <tr>
+                <th>Ceramica</th>
+                <th>Tipo</th>
+                <th>Unidades disponíveis</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Embramaco</td>
+                <td>Porcelanato</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Ceramica</td>
+                <td>Indisponível</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Savane</td>
+                <td>Porcelanato</td>
+                <td>140</td>
+            </tr>
+            <tr>
+                <td>Ceramica</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Delta</td>
+                <td>Porcelanato</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>Ceramica</td>
+                <td>Indisponível</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Lef</td>
+                <td>Porcelanato</td>
+                <td>Indisponível</td>
+            </tr>
+            <tr>
+                <td>Ceramica</td>
+                <td>120</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Villagres</td>
+                <td>Porcelanato</td>
+                <td rowspan="2">Indisponível</td>
+            </tr>
+            <tr>
+                <td>Ceramica</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
