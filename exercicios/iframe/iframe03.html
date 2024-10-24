@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificando Iframes</title>
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        iframe{
+            display: block;
+            width: 80vw;
+            margin: auto;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Navegando entre links no iframe</h1>
+    <p>Selecione o exercício desejado abaixo, para visualizar a página relacionada no iframe</p>
+
+    <ul>
+        <li><a href="../tabelas/tabela01.html" target="tela">Tabela01</a></li>
+        <li><a href="../tabelas/tabela02.html" target="tela">Tabela02</a></li>
+        <li><a href="../tabelas/tabela03.html" target="tela">Tabela03</a></li>
+        <li><a href="../../desafio-tabelas/index.html" target="tela">Desafio Tabelas</a></li>
+    </ul>
+
+    <p>Abaixo, veja o exercício que você selecionou. Selecione outras e veja o conteúdo ser alterado em tempo real
+    </p>
+    
+    <iframe src="" frameborder="1" name="tela"></iframe>
+</body>
+</html>
