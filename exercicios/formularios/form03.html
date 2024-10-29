@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="nome">nome</label>
+            <input type="text" name="nome" id="nome" required>
+        </p>
+        <p>
+            <label for="media">media</label>
+            <input type="number" name="media" id="media" min="0" max="10" step="0.05" required>
+        </p>
+        <p>
+            <label for="mes">mes</label>
+            <input type="date" name="mes" id="mes">
+        </p>
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
