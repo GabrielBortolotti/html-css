@@ -8,24 +8,35 @@
 <body>
     <h1>Formulario</h1>
     <form action="cadastro.php" method="post">
-        <p>
-            <label for="nome">nome</label>
-            <input type="text" name="nome" id="nome" required>
-        </p>
-        <p>
-            <label for="media">media</label>
-            <input type="number" name="media" id="media" min="0" max="10" step="0.05" required>
-        </p>
-        <p>
-            <label for="mes">mes</label>
-            <input type="month" name="mes" id="mes">
-        </p>
-        <p>
-            <label for="data">Data</label>
-            <input type="date" name="data" id="data">
-        </p>
-        <input type="reset" value="Limpar">
-        <input type="submit" value="Enviar">
+        <fieldset>
+            <legend>Dados</legend>
+            <p>
+                <label for="nome">nome</label>
+                <input type="text" name="nome" id="nome" required>
+            </p>
+            <p>
+                <label for="media">media</label>
+                <input type="number" name="media" id="media" min="0" max="10" step="0.05" required>
+            </p>
+            <p>
+                <label for="mes">mes</label>
+                <input type="month" name="mes" id="mes">
+            </p>
+            <p>
+                <label for="data">Data</label>
+                <input type="date" name="data" id="data">
+            </p>
+            <p>
+                <label for="tele">Telefone</label>
+                <input type="tel" name="tele" id="tele">
+            </p>
+            <p>
+                <label for="email">email</label>
+                <input type="email" name="email" id="email">
+            </p>
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+        </fieldset>
     </form>
 </body>
 </html>
