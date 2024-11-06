@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="" method="get">
+        <p>
+            <label for="inum1">Numero 1:</label>
+            <input type="number" name="numero1" id="inum1" oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        </p>
+
+        <p>
+            <label for="inum2">Numero 2:</label>
+            <input type="number" name="numero2" id="inum2" oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+        </p>
+
+        <p>
+            <label for="isoma">Soma</label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+
+        <p>
+            <input type="range" name="range1" id="ir1" min="0" max="10" oninput="ira1.innerHTML = ir1.value;ir3.innerHTML = ir1.value + ir2.value">
+            <output id="ira1">0</output>
+            <input type="range" name="range2" id="ir2" min="0" max="10" oninput="ira2.innerHTML = ir2.value;ir3.innerHTML = ir1.value + ir2.value">
+            <output id="ira2">0</output>
+            <input type="range" name="range3" id="ir3" min="0" max="20" oninput="ira3.innerHTML = ir3.value">
+            <output id="ira3">0</output>
+        </p>
+        <input type="submit" value="Enviar"></input>
+        <input type="reset" value="Limpar"></input>
+    </form>
+</body>
+</html>
